@@ -9,6 +9,8 @@ import commonUtils.PropertyUtils;
 
 public class POJOSupporters {
 	
+	public static final int TimeOut = 20;
+	
 	private static PropertyUtils prConf;
 	private static ExcelUtils excel;
 	

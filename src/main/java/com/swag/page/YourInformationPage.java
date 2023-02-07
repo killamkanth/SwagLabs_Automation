@@ -27,24 +27,20 @@ public boolean VerifyYourInformationPageTitle() {
 	public void Enter_Address_Details(String firstName,String lastName, String pinCode) {
 		try {
 			Supporters.getWebElement("first-name").sendKeys(firstName);
-			Base.getExtentTest().log(LogStatus.INFO	, " Data is entered in Inputfield is " + firstName);
+			Base.getExtentTest().log(LogStatus.INFO	, " FirstName is entered in Inputfield is " + firstName);
 			
 			Supporters.getWebElement("last-name").sendKeys(lastName);
-			Base.getExtentTest().log(LogStatus.INFO	, " Data is entered in Inputfield is " + lastName);
+			Base.getExtentTest().log(LogStatus.INFO	, " LastName is entered in Inputfield is " + lastName);
 
 
 			Supporters.getWebElement("postal-code").sendKeys(pinCode);
-			Base.getExtentTest().log(LogStatus.INFO	, " Data is entered in Inputfield is " + pinCode);
+			Base.getExtentTest().log(LogStatus.INFO	, " PinCode is entered in Inputfield is " + pinCode);
 			
 		}
 		catch(Exception e) {
 			e.getMessage();
 			Base.getExtentTest().log(LogStatus.INFO, "Error in Entering Address details " + e.getMessage());
 		}
-		
-
-		
-
 	}
 	public boolean VerifyCheckoutOverviewPage_Title() {
 		

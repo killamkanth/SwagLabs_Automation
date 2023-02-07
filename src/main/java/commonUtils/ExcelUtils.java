@@ -29,11 +29,14 @@ public class ExcelUtils {
 	public String getSingleCellData(String sheetName, int rowNum,int cellNum) {
 		 //String data = "";
 		 cell = wb.getSheet(sheetName).getRow(rowNum).getCell(cellNum);
+		 
 		 if(cell.getCellType()==CellType.STRING) {
 			  cellValue = cell.getStringCellValue();
-		 }else if(cell.getCellType()==CellType.NUMERIC) {
-			  cellValue = cell.getNumericCellValue()+"";
-		 }
+			} else if(cell.getCellType()==CellType.NUMERIC) { 
+				
+				cellValue = cell.getNumericCellValue()+""; 
+			}
+				 
 		 
 		 return cellValue;
 		

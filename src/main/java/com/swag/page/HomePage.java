@@ -26,6 +26,7 @@ public class HomePage extends Base {
 	@FindBy(xpath="//*[@class='shopping_cart_link']/span")
 	WebElement cartIconElement;
 	
+	
 	public HomePage() {
 		PageFactory.initElements(Base.getDriver(), this);
 		
@@ -37,7 +38,7 @@ public class HomePage extends Base {
 			boolean flag = Supporters.getWebElement("Products").isDisplayed();
 			if(flag) 
 			{
-				System.out.println("Successfully logged in with " + user);
+				//System.out.println("Successfully logged in with " + user);
 				Base.getExtentTest().log(LogStatus.PASS, "Logged in successfully as " + user);
 			}
 		}catch(Exception e) 
@@ -86,7 +87,10 @@ public class HomePage extends Base {
 		//Supporters.getWebElement("add-to-cart-sauce-labs-backpack").click();
 		Supporters.clickOnElement(Supporters.getWebElement("add-to-cart-sauce-labs-backpack")," Add to cart Element");
 		
-		String prodCount = Base.getDriver().findElement(By.xpath("//a/span")).getText();
+	//	String prodCount = Base.getDriver().findElement(By.xpath("//a/span")).getText();
+		
+		String prodCount = cartIconElement.getText();
+
 		int i = Integer.parseInt(prodCount);
 		Base.getExtentTest().log(LogStatus.INFO, "Items Added to cart :: " + i);
 		

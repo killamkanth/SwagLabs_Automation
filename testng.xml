@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+	<parameter name="browser" value="chrome"></parameter>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.swag.Test.Swag_Labs_Suite"/>
+       <class name="com.swag.Test.Swag_Labs_Suite">
+        <methods>
+        <include name="TC_01_Verify_Login_All_Users" />
+        <include name="TC_02_Verify_Standard_User" />
+        <include name="TC_03_Verify_Locked_User"/>
+        <include name="TC_04_Validate_Problem_User"/>
+        <include name="TC_05_Validate_Performance_Glitch_User"/>
+      </methods>
+       </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

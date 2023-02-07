@@ -13,6 +13,7 @@ public class CheckOutPage extends Base {
 		
 	}
 	
+	
 	public boolean VerifyCheckOutPageTitle() {
 		
 		boolean flag = Supporters.getWebElement("Checkout: Your Information").isDisplayed();

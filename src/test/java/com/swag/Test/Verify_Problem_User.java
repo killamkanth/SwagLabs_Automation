@@ -47,8 +47,6 @@ public class Verify_Problem_User extends Base {
 		
 		homePage.clickOnOpenMenu();
 		homePage.clickOnLogOutButton();
-
-
 	}
 	
 	
@@ -72,7 +70,7 @@ public class Verify_Problem_User extends Base {
 		
 	}
 	
-	@Test
+	
 	public void Verify_Standard_User() throws InterruptedException {
 		
 		loginPage = new LoginPage();

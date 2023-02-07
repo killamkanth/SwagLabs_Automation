@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value=""/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.swag.Test.Verify_Problem_User">
+      <class name="com.swag.Test.Swag_Labs_Suite">
         <methods>
-          <include name="initiateReports"/>
+          <include name="TC_03_Verify_Locked_User"/>
+          <include name="generateReports"/>
+          <include name="TC_04_Validate_Problem_User"/>
           <include name="befotrTCExecution"/>
           <include name="openBrowser"/>
-          <include name="Verify_Standard_User"/>
-          <include name="generateReports"/>
-          <include name="closeBrowser"/>
           <include name="afterTCExecution"/>
+          <include name="closeBrowser"/>
+          <include name="TC_05_Validate_Performance_Glitch_User"/>
+          <include name="initiateReports"/>
+          <include name="TC_02_Verify_Standard_User"/>
         </methods>
-      </class> <!-- com.swag.Test.Verify_Problem_User -->
+      </class> <!-- com.swag.Test.Swag_Labs_Suite -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
