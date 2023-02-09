@@ -10,8 +10,8 @@
           <include name="openBrowser"/>
           <include name="afterTCExecution"/>
           <include name="initiateReports"/>
+          <include name="TC_02_Verify_Standard_User"/>
           <include name="closeBrowser"/>
-          <include name="Verify_Standard_User"/>
         </methods>
       </class> <!-- com.swag.Test.Swag_Labs_Suite -->
     </classes>

@@ -22,7 +22,7 @@ public class Swag_Labs_Suite extends Base {
 	YourInformationPage yourInformationPage;
 	
 @Test(priority=1)
-public void TC_01_Verify_Login_All_Users() throws InterruptedException {
+public void TC_01_Verify_Login_All_Users() {
 	
 	try {
 			loginPage = new LoginPage();
@@ -70,11 +70,9 @@ public void TC_01_Verify_Login_All_Users() throws InterruptedException {
 			Boolean flag = loginPage.verify_LockedUser_ErrorMesg();
 			if(flag) {
 				Assert.assertTrue(flag);
-				//System.out.println("Sucessfully verified " + locked_User);
 				Base.getExtentTest().log(LogStatus.INFO, "Sucessfully verified " + locked_User);
 			}
 			else {
-				//System.out.println("Error in verifying " + locked_User);
 				Base.getExtentTest().log(LogStatus.INFO, "Error in verifying " + locked_User);
 
 			}
@@ -87,7 +85,7 @@ public void TC_01_Verify_Login_All_Users() throws InterruptedException {
 			
 	}
 	@Test(priority=2)
-	public void TC_02_Verify_Standard_User() throws InterruptedException {
+	public void TC_02_Verify_Standard_User()  {
 		
 		try {
 			
@@ -142,12 +140,16 @@ public void TC_01_Verify_Login_All_Users() throws InterruptedException {
 				Base.getExtentTest().log(LogStatus.INFO, "Error in verifying Information page Title");
 			}
 			
-			String firstName = Base.getExcel().getSingleCellData("Swag_Labs_Data", 1, 0);
-			String lName = Base.getExcel().getSingleCellData("Swag_Labs_Data", 1, 1);
-			String value = Base.getExcel().getSingleCellData("Swag_Labs_Data", 1, 2);
-			String zipCode = value.substring(0, 5);
+			//String firstName = Base.getExcel().getSingleCellData("Swag_Labs_Data", 1, 0);
+			String firstName = Base.getExcel().getCellData("Swag_Labs_Data","FirstName");
+			String LastName = Base.getExcel().getCellData("Swag_Labs_Data", "LastName");
+			String zipCode = Base.getExcel().getCellData("Swag_Labs_Data", "ZipCode");
+
+//			String lName = Base.getExcel().getSingleCellData("Swag_Labs_Data", 1, 1);
+		//	String value = Base.getExcel().getSingleCellData("Swag_Labs_Data", 1, 2);
+			//String zipCode = value.substring(0, 5);
 		
-			yourInformationPage.Enter_Address_Details(firstName, lName, zipCode);
+			yourInformationPage.Enter_Address_Details(firstName, LastName, zipCode);
 			
 			Supporters.clickOnElement(Supporters.getWebElement("continue")," Continue Button");
 			
@@ -159,19 +161,21 @@ public void TC_01_Verify_Login_All_Users() throws InterruptedException {
 				Base.getExtentTest().log(LogStatus.INFO, "Error in verifying checkout overview page Title");
 		
 			}
-			String expValue = Base.getExcel().getSingleCellData("Swag_Labs_Data", 4, 0);
+			//String expValue = Base.getExcel().getSingleCellData("Swag_Labs_Data", 4, 0);
+			String expValue = Base.getExcel().getCellData("Swag_Labs_Data","Payment Information");
+
 			String actValue = yourInformationPage.VerifyPaymentInformation();
 			Assert.assertEquals(actValue, expValue);
 		
 			
-			String exp_Value = Base.getExcel().getSingleCellData("Swag_Labs_Data", 5, 0);
+			String exp_Value = Base.getExcel().getCellData("Swag_Labs_Data", "Shipping Information");
 			String act_Value = yourInformationPage.VerifyShippingInformation();
 			Assert.assertEquals(act_Value, exp_Value);
 			
 			Supporters.clickOnElement(Supporters.getWebElement("Finish"), "Finish Button");
 			
 			String actMesg = Supporters.getWebElement("THANK YOU FOR YOUR ORDER").getText();
-			String expMesg = Base.getExcel().getSingleCellData("Swag_Labs_Data", 6, 0);
+			String expMesg = Base.getExcel().getCellData("Swag_Labs_Data", "Success Message");
 			if(expMesg.equals(actMesg)) {
 				Base.getExtentTest().log(LogStatus.INFO, "Order placed Successfully ");
 			}else {

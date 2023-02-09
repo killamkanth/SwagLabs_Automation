@@ -40,7 +40,7 @@ public class LoginPage extends Base{
 	public void validate_LockedUser_Mesg() {
 		try {
 			String textMesg = Supporters.getWebElement("Epic sadface").getText();
-			Assert.assertEquals(textMesg, Base.getExcel().getSingleCellData("Swag_Labs_Data", 3, 0));
+			Assert.assertEquals(textMesg, Base.getExcel().getCellData("Swag_Labs_Data", "Locked User Message"));
 			Base.getExtentTest().log(LogStatus.PASS, "Error Message is Validated successfully");
 			
 		}catch(Exception e) {

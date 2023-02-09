@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-07T18:13:49 IST" name="Suite" finished-at="2023-02-07T18:13:57 IST" duration-ms="7436">
+  <suite started-at="2023-02-09T11:08:12 IST" name="Default suite" finished-at="2023-02-09T11:08:41 IST" duration-ms="28278">
     <groups>
     </groups>
-    <test started-at="2023-02-07T18:13:49 IST" name="Test" finished-at="2023-02-07T18:13:57 IST" duration-ms="7436">
+    <test started-at="2023-02-09T11:08:12 IST" name="Default test" finished-at="2023-02-09T11:08:41 IST" duration-ms="28278">
       <class name="com.swag.Test.Swag_Labs_Suite">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:com.swag.Test.Swag_Labs_Suite@6771beb3]" started-at="2023-02-07T18:13:46 IST" name="openBrowser" finished-at="2023-02-07T18:13:49 IST" duration-ms="3331" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:com.swag.Test.Swag_Labs_Suite@443118b0]" started-at="2023-02-09T11:08:09 IST" name="openBrowser" finished-at="2023-02-09T11:08:12 IST" duration-ms="3676" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,45 +18,149 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="initiateReports()[pri:0, instance:com.swag.Test.Swag_Labs_Suite@6771beb3]" started-at="2023-02-07T18:13:49 IST" name="initiateReports" finished-at="2023-02-07T18:13:49 IST" duration-ms="116" status="PASS">
+        <test-method is-config="true" signature="initiateReports()[pri:0, instance:com.swag.Test.Swag_Labs_Suite@443118b0]" started-at="2023-02-09T11:08:12 IST" name="initiateReports" finished-at="2023-02-09T11:08:12 IST" duration-ms="125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateReports -->
-        <test-method is-config="true" signature="befotrTCExecution(java.lang.reflect.Method)[pri:0, instance:com.swag.Test.Swag_Labs_Suite@6771beb3]" started-at="2023-02-07T18:13:49 IST" name="befotrTCExecution" finished-at="2023-02-07T18:13:49 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="befotrTCExecution(java.lang.reflect.Method)[pri:0, instance:com.swag.Test.Swag_Labs_Suite@443118b0]" started-at="2023-02-09T11:08:12 IST" name="befotrTCExecution" finished-at="2023-02-09T11:08:12 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.swag.Test.Swag_Labs_Suite.TC_02_Verify_Standard_User() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.swag.Test.Swag_Labs_Suite.TC_01_Verify_Login_All_Users()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- befotrTCExecution -->
-        <test-method signature="TC_02_Verify_Standard_User()[pri:2, instance:com.swag.Test.Swag_Labs_Suite@6771beb3]" started-at="2023-02-07T18:13:49 IST" name="TC_02_Verify_Standard_User" finished-at="2023-02-07T18:13:56 IST" duration-ms="6788" status="PASS">
+        <test-method signature="TC_01_Verify_Login_All_Users()[pri:1, instance:com.swag.Test.Swag_Labs_Suite@443118b0]" started-at="2023-02-09T11:08:12 IST" name="TC_01_Verify_Login_All_Users" finished-at="2023-02-09T11:08:26 IST" duration-ms="13069" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_02_Verify_Standard_User -->
-        <test-method is-config="true" signature="afterTCExecution(org.testng.ITestResult)[pri:0, instance:com.swag.Test.Swag_Labs_Suite@6771beb3]" started-at="2023-02-07T18:13:56 IST" name="afterTCExecution" finished-at="2023-02-07T18:13:56 IST" duration-ms="194" status="PASS">
+        </test-method> <!-- TC_01_Verify_Login_All_Users -->
+        <test-method is-config="true" signature="afterTCExecution(org.testng.ITestResult)[pri:0, instance:com.swag.Test.Swag_Labs_Suite@443118b0]" started-at="2023-02-09T11:08:26 IST" name="afterTCExecution" finished-at="2023-02-09T11:08:26 IST" duration-ms="232" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_02_Verify_Standard_User status=SUCCESS method=Swag_Labs_Suite.TC_02_Verify_Standard_User()[pri:2, instance:com.swag.Test.Swag_Labs_Suite@6771beb3] output={null}]]]>
+                <![CDATA[[TestResult name=TC_01_Verify_Login_All_Users status=SUCCESS method=Swag_Labs_Suite.TC_01_Verify_Login_All_Users()[pri:1, instance:com.swag.Test.Swag_Labs_Suite@443118b0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTCExecution -->
-        <test-method is-config="true" signature="generateReports()[pri:0, instance:com.swag.Test.Swag_Labs_Suite@6771beb3]" started-at="2023-02-07T18:13:56 IST" name="generateReports" finished-at="2023-02-07T18:13:57 IST" duration-ms="298" status="PASS">
+        <test-method signature="TC_02_Verify_Standard_User()[pri:2, instance:com.swag.Test.Swag_Labs_Suite@443118b0]" started-at="2023-02-09T11:08:26 IST" name="TC_02_Verify_Standard_User" finished-at="2023-02-09T11:08:30 IST" duration-ms="4618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_Verify_Standard_User -->
+        <test-method is-config="true" signature="befotrTCExecution(java.lang.reflect.Method)[pri:0, instance:com.swag.Test.Swag_Labs_Suite@443118b0]" started-at="2023-02-09T11:08:26 IST" name="befotrTCExecution" finished-at="2023-02-09T11:08:26 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.swag.Test.Swag_Labs_Suite.TC_02_Verify_Standard_User()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befotrTCExecution -->
+        <test-method is-config="true" signature="afterTCExecution(org.testng.ITestResult)[pri:0, instance:com.swag.Test.Swag_Labs_Suite@443118b0]" started-at="2023-02-09T11:08:30 IST" name="afterTCExecution" finished-at="2023-02-09T11:08:31 IST" duration-ms="188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_02_Verify_Standard_User status=SUCCESS method=Swag_Labs_Suite.TC_02_Verify_Standard_User()[pri:2, instance:com.swag.Test.Swag_Labs_Suite@443118b0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTCExecution -->
+        <test-method signature="TC_03_Verify_Locked_User()[pri:3, instance:com.swag.Test.Swag_Labs_Suite@443118b0]" started-at="2023-02-09T11:08:31 IST" name="TC_03_Verify_Locked_User" finished-at="2023-02-09T11:08:31 IST" duration-ms="377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_Verify_Locked_User -->
+        <test-method is-config="true" signature="befotrTCExecution(java.lang.reflect.Method)[pri:0, instance:com.swag.Test.Swag_Labs_Suite@443118b0]" started-at="2023-02-09T11:08:31 IST" name="befotrTCExecution" finished-at="2023-02-09T11:08:31 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.swag.Test.Swag_Labs_Suite.TC_03_Verify_Locked_User()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befotrTCExecution -->
+        <test-method is-config="true" signature="afterTCExecution(org.testng.ITestResult)[pri:0, instance:com.swag.Test.Swag_Labs_Suite@443118b0]" started-at="2023-02-09T11:08:31 IST" name="afterTCExecution" finished-at="2023-02-09T11:08:31 IST" duration-ms="205" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_03_Verify_Locked_User status=SUCCESS method=Swag_Labs_Suite.TC_03_Verify_Locked_User()[pri:3, instance:com.swag.Test.Swag_Labs_Suite@443118b0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTCExecution -->
+        <test-method signature="TC_04_Validate_Problem_User()[pri:4, instance:com.swag.Test.Swag_Labs_Suite@443118b0]" started-at="2023-02-09T11:08:31 IST" name="TC_04_Validate_Problem_User" finished-at="2023-02-09T11:08:33 IST" duration-ms="1780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04_Validate_Problem_User -->
+        <test-method is-config="true" signature="befotrTCExecution(java.lang.reflect.Method)[pri:0, instance:com.swag.Test.Swag_Labs_Suite@443118b0]" started-at="2023-02-09T11:08:31 IST" name="befotrTCExecution" finished-at="2023-02-09T11:08:31 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.swag.Test.Swag_Labs_Suite.TC_04_Validate_Problem_User()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befotrTCExecution -->
+        <test-method is-config="true" signature="afterTCExecution(org.testng.ITestResult)[pri:0, instance:com.swag.Test.Swag_Labs_Suite@443118b0]" started-at="2023-02-09T11:08:33 IST" name="afterTCExecution" finished-at="2023-02-09T11:08:33 IST" duration-ms="220" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_04_Validate_Problem_User status=SUCCESS method=Swag_Labs_Suite.TC_04_Validate_Problem_User()[pri:4, instance:com.swag.Test.Swag_Labs_Suite@443118b0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTCExecution -->
+        <test-method is-config="true" signature="befotrTCExecution(java.lang.reflect.Method)[pri:0, instance:com.swag.Test.Swag_Labs_Suite@443118b0]" started-at="2023-02-09T11:08:33 IST" name="befotrTCExecution" finished-at="2023-02-09T11:08:33 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.swag.Test.Swag_Labs_Suite.TC_05_Validate_Performance_Glitch_User()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befotrTCExecution -->
+        <test-method signature="TC_05_Validate_Performance_Glitch_User()[pri:5, instance:com.swag.Test.Swag_Labs_Suite@443118b0]" started-at="2023-02-09T11:08:33 IST" name="TC_05_Validate_Performance_Glitch_User" finished-at="2023-02-09T11:08:40 IST" duration-ms="6843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_05_Validate_Performance_Glitch_User -->
+        <test-method is-config="true" signature="afterTCExecution(org.testng.ITestResult)[pri:0, instance:com.swag.Test.Swag_Labs_Suite@443118b0]" started-at="2023-02-09T11:08:40 IST" name="afterTCExecution" finished-at="2023-02-09T11:08:40 IST" duration-ms="157" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_05_Validate_Performance_Glitch_User status=SUCCESS method=Swag_Labs_Suite.TC_05_Validate_Performance_Glitch_User()[pri:5, instance:com.swag.Test.Swag_Labs_Suite@443118b0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTCExecution -->
+        <test-method is-config="true" signature="generateReports()[pri:0, instance:com.swag.Test.Swag_Labs_Suite@443118b0]" started-at="2023-02-09T11:08:40 IST" name="generateReports" finished-at="2023-02-09T11:08:41 IST" duration-ms="399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReports -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.swag.Test.Swag_Labs_Suite@6771beb3]" started-at="2023-02-07T18:13:57 IST" name="closeBrowser" finished-at="2023-02-07T18:14:13 IST" duration-ms="16233" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.swag.Test.Swag_Labs_Suite@443118b0]" started-at="2023-02-09T11:08:41 IST" name="closeBrowser" finished-at="2023-02-09T11:08:41 IST" duration-ms="135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.swag.Test.Swag_Labs_Suite -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

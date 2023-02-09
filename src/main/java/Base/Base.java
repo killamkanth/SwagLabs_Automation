@@ -58,16 +58,21 @@ public class Base {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		try {
+			if(browser.equalsIgnoreCase("chrome")) {
+				
+				driver = WebDriverManager.chromedriver().create();
+				inIt();
+				
+			} else if(browser.equalsIgnoreCase("edge")) {
+				driver = WebDriverManager.edgedriver().create();
+				inIt();
+			} 
+		}catch(Exception e) {
+			e.printStackTrace();
+			Base.getExtentTest().log(LogStatus.INFO, "Error in Opening Browser " + e.getMessage());
+		}
 		
-		if(browser.equalsIgnoreCase("chrome")) {
-			
-			driver = WebDriverManager.chromedriver().create();
-			inIt();
-			
-		} else if(browser.equalsIgnoreCase("edge")) {
-			driver = WebDriverManager.edgedriver().create();
-			inIt();
-		} 
 		
 	} 
 	
@@ -111,25 +116,27 @@ public class Base {
 	
 	@AfterMethod
 	public void afterTCExecution(ITestResult result)  {
-		
-		if(result.getStatus() == ITestResult.FAILURE) {
-			System.out.println("TC is Failed " + getTcName());
-			
+		try {
+			if(result.getStatus() == ITestResult.FAILURE) {
+				System.out.println("TC is Failed " + getTcName());				
+				ScreenshotUtility.captureScreenShot();				
+				System.out.println(result.getThrowable());
+				extentTest.log(LogStatus.FAIL, "Test Case is Failed :: " + getTcName() + " :: "+result.getThrowable());
+			} else if(result.getStatus() == ITestResult.SUCCESS) {
+				System.out.println("TC is Passed " + getTcName());
 				ScreenshotUtility.captureScreenShot();
+				extentTest.log(LogStatus.PASS, "Test Case is Passed :: " + getTcName());
+			} else if(result.getStatus() == ITestResult.SKIP) {
+				System.out.println("TC is Skipped " + getTcName());
+				ScreenshotUtility.captureScreenShot();			
+				extentTest.log(LogStatus.SKIP, "Test Case is Skipped :: " + getTcName());
+			}
 			
-			System.out.println(result.getThrowable());
-			extentTest.log(LogStatus.FAIL, "Test Case is Failed :: " + getTcName() + " :: "+result.getThrowable());
-		} else if(result.getStatus() == ITestResult.SUCCESS) {
-			System.out.println("TC is Passed " + getTcName());
-			ScreenshotUtility.captureScreenShot();
-			extentTest.log(LogStatus.PASS, "Test Case is Passed :: " + getTcName());
-		} else if(result.getStatus() == ITestResult.SKIP) {
-			System.out.println("TC is Skipped " + getTcName());
-			ScreenshotUtility.captureScreenShot();			
-			extentTest.log(LogStatus.SKIP, "Test Case is Skipped :: " + getTcName());
+			extentReports.endTest(extentTest);
+		} catch(Exception e ) {
+			Base.getExtentTest().log(LogStatus.INFO, "Error in afterTCExecution" + e.getMessage());
 		}
 		
-		extentReports.endTest(extentTest);
 		
 	}
 

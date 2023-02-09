@@ -52,6 +52,13 @@ public class HomePage extends Base {
 	}
 	
 	public void clickOnOpenMenu() {
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Supporters.waitTillElementIsClicked(Supporters.getWebElement("Open Menu"));
 		Supporters.getWebElement("Open Menu").click();
 		Base.getExtentTest().log(LogStatus.INFO, "Click action is performed on open menu icon");
 		
@@ -69,7 +76,7 @@ public class HomePage extends Base {
 		return count;
 	}
 	
-	public void searchForProducts() throws InterruptedException {
+	public void searchForProducts( ) throws InterruptedException {
 		
 		  try {
 		  Supporters.clickOnElement(selectElement,"Dropdown Element");
