@@ -87,21 +87,21 @@ public class ExcelUtils {
 		{
 			int lastCellNum = sheet.getRow(i).getLastCellNum();
 			String keyValue = sheet.getRow(i).getCell(0).getStringCellValue();
-
-			for (int j = 0; j < lastCellNum; j++) 
+			if(keyValue.equalsIgnoreCase(Value)) 
 			{
-				if(keyValue.equalsIgnoreCase(Value)) 
+				for (int j = 1; j < lastCellNum; j++) 
 				{
-					Cell req_Value = sheet.getRow(i).getCell(j+1);
-					if(req_Value.getCellType()==CellType.STRING) 
-					{
-						cellValue = req_Value.getStringCellValue();
-						break;
-					} else if(req_Value.getCellType()==CellType.NUMERIC) 
-					{
-						cellValue = req_Value.getNumericCellValue()+"";
-						break;
-					}
+					
+						Cell req_Value = sheet.getRow(i).getCell(j+1);
+						if(req_Value.getCellType()==CellType.STRING) 
+						{
+							cellValue = req_Value.getStringCellValue();
+							break;
+						} else if(req_Value.getCellType()==CellType.NUMERIC) 
+						{
+							cellValue = req_Value.getNumericCellValue()+"";
+							break;
+						}
 				}		
 			}		
 		}		

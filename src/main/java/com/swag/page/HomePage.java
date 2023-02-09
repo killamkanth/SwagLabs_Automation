@@ -80,7 +80,7 @@ public class HomePage extends Base {
 		
 		  try {
 		  Supporters.clickOnElement(selectElement,"Dropdown Element");
-		  Supporters.selectValueFromDropdown(selectElement, "hilo"); 
+		  Supporters.selectValueFromDropdown(selectElement, Base.getExcel().getSingleCellData("Swag_Labs_Data", 7,1)); 
 		  } catch(NullPointerException e) { 
 			  e.printStackTrace(); }
 		 

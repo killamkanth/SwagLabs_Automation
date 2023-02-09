@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\lakshmi.killamsetty\AppData\Local\Temp\testng-eclipse--1610522510\testng-customsuite.xml</span>
+                    <span>C:\Users\lakshmi.killamsetty\AppData\Local\Temp\testng-eclipse--693590087\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,27 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.swag.Test.Swag_Labs_Suite" class="method navigator-link" hash-for-method="TC_01_Verify_Login_All_Users">TC_01_Verify_Login_All_Users</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.swag.Test.Swag_Labs_Suite" class="method navigator-link" hash-for-method="TC_02_Verify_Standard_User">TC_02_Verify_Standard_User</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.swag.Test.Swag_Labs_Suite" class="method navigator-link" hash-for-method="TC_03_Verify_Locked_User">TC_03_Verify_Locked_User</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.swag.Test.Swag_Labs_Suite" class="method navigator-link" hash-for-method="TC_04_Validate_Problem_User">TC_04_Validate_Problem_User</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.swag.Test.Swag_Labs_Suite" class="method navigator-link" hash-for-method="TC_05_Validate_Performance_Glitch_User">TC_05_Validate_Performance_Glitch_User</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -146,37 +126,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_01_Verify_Login_All_Users">
-                  </a> <!-- TC_01_Verify_Login_All_Users -->
-                  <span class="method-name">TC_01_Verify_Login_All_Users</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="TC_02_Verify_Standard_User">
                   </a> <!-- TC_02_Verify_Standard_User -->
                   <span class="method-name">TC_02_Verify_Standard_User</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_03_Verify_Locked_User">
-                  </a> <!-- TC_03_Verify_Locked_User -->
-                  <span class="method-name">TC_03_Verify_Locked_User</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_04_Validate_Problem_User">
-                  </a> <!-- TC_04_Validate_Problem_User -->
-                  <span class="method-name">TC_04_Validate_Problem_User</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_05_Validate_Performance_Glitch_User">
-                  </a> <!-- TC_05_Validate_Performance_Glitch_User -->
-                  <span class="method-name">TC_05_Validate_Performance_Glitch_User</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -184,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\lakshmi.killamsetty\AppData\Local\Temp\testng-eclipse--1610522510\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\lakshmi.killamsetty\AppData\Local\Temp\testng-eclipse--693590087\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -193,7 +145,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.swag.Test.Swag_Labs_Suite&quot;/&gt;
+      &lt;class name=&quot;com.swag.Test.Swag_Labs_Suite&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;TC_02_Verify_Standard_User&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.swag.Test.Swag_Labs_Suite --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -233,32 +189,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC_01_Verify_Login_All_Users')
+data.setCell(0, 1, 'TC_02_Verify_Standard_User')
 data.setCell(0, 2, 'com.swag.Test.Swag_Labs_Suite')
-data.setCell(0, 3, 13069);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC_05_Validate_Performance_Glitch_User')
-data.setCell(1, 2, 'com.swag.Test.Swag_Labs_Suite')
-data.setCell(1, 3, 6843);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC_02_Verify_Standard_User')
-data.setCell(2, 2, 'com.swag.Test.Swag_Labs_Suite')
-data.setCell(2, 3, 4618);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC_04_Validate_Problem_User')
-data.setCell(3, 2, 'com.swag.Test.Swag_Labs_Suite')
-data.setCell(3, 3, 1780);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC_03_Verify_Locked_User')
-data.setCell(4, 2, 'com.swag.Test.Swag_Labs_Suite')
-data.setCell(4, 3, 377);
+data.setCell(0, 3, 131686);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -273,9 +213,22 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.swag.Test.Swag_Labs_Suite</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TC_04_Validate_Problem_User</span>
+                <br/>
+                <span class="ignored-method-name">TC_05_Validate_Performance_Glitch_User</span>
+                <br/>
+                <span class="ignored-method-name">TC_03_Verify_Locked_User</span>
+                <br/>
+                <span class="ignored-method-name">TC_01_Verify_Login_All_Users</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -291,75 +244,27 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">initiateReports</span>
-                <span class="method-start">3687 ms</span>
+                <span class="method-start">3497 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">befotrTCExecution(public void com.swag.Test.Swag_Labs_Suite.TC_01_Verify_Login_All_Users())</span>
-                <span class="method-start">3835 ms</span>
+                <span class="method-name">befotrTCExecution(public void com.swag.Test.Swag_Labs_Suite.TC_02_Verify_Standard_User())</span>
+                <span class="method-start">3665 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_01_Verify_Login_All_Users</span>
-                <span class="method-start">3838 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterTCExecution([TestResult name=TC_01_Verify_Login_All_Users status=SUCCESS method=Swag_Labs_Suite.TC_01_Verify_Log...)</span>
-                <span class="method-start">16910 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">TC_02_Verify_Standard_User</span>
-                <span class="method-start">17142 ms</span>
+                <span class="method-start">3670 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">befotrTCExecution(public void com.swag.Test.Swag_Labs_Suite.TC_02_Verify_Standard_User())</span>
-                <span class="method-start">17142 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">afterTCExecution([TestResult name=TC_02_Verify_Standard_User status=SUCCESS method=Swag_Labs_Suite.TC_02_Verify_Stand...)</span>
-                <span class="method-start">21765 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">befotrTCExecution(public void com.swag.Test.Swag_Labs_Suite.TC_03_Verify_Locked_User())</span>
-                <span class="method-start">21953 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_03_Verify_Locked_User</span>
-                <span class="method-start">21953 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterTCExecution([TestResult name=TC_03_Verify_Locked_User status=SUCCESS method=Swag_Labs_Suite.TC_03_Verify_Locked_...)</span>
-                <span class="method-start">22331 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">befotrTCExecution(public void com.swag.Test.Swag_Labs_Suite.TC_04_Validate_Problem_User())</span>
-                <span class="method-start">22536 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_04_Validate_Problem_User</span>
-                <span class="method-start">22536 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterTCExecution([TestResult name=TC_04_Validate_Problem_User status=SUCCESS method=Swag_Labs_Suite.TC_04_Validate_Pr...)</span>
-                <span class="method-start">24317 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">befotrTCExecution(public void com.swag.Test.Swag_Labs_Suite.TC_05_Validate_Performance_Glitch_User())</span>
-                <span class="method-start">24538 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_05_Validate_Performance_Glitch_User</span>
-                <span class="method-start">24539 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterTCExecution([TestResult name=TC_05_Validate_Performance_Glitch_User status=SUCCESS method=Swag_Labs_Suite.TC_05_...)</span>
-                <span class="method-start">31384 ms</span>
+                <span class="method-start">135361 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">generateReports</span>
-                <span class="method-start">31556 ms</span>
+                <span class="method-start">135625 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">31986 ms</span>
+                <span class="method-start">135930 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
